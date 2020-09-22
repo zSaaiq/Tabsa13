@@ -1,0 +1,57 @@
+{
+	title =  "Tabsa13";
+	entry = {
+		cell = PSLinkCell;
+	};
+	items = (
+		{
+		cellClass = "HBImageTableCell";
+		height = 150;
+		icon = "logo.png";
+		},
+		{
+			cell = PSSwitchCell;
+			default = false;
+			defaults = "com.zsaaiq.tabsa13";
+			key = "tweakEnabled";
+			label = "Enable Tabsa13";
+			PostNotification = "com.zsaaiq.tabsa13-prefsreload";
+		},
+		{
+			cell = PSButtonCell;
+			defaults = "com.zsaaiq.tabsa13";
+			action = respring;
+			label = "Respring";
+		},
+		{
+			cell = PSGroupCell;
+			label = "";
+		},
+		{
+			cellClass = "HBTwitterCell";
+			label = "zSaaiq";
+			user = "0x1585D65F0";
+		},
+		{
+			cell = PSGroupCell;
+			label = "Original dev (Tabsa iOS 12)";
+		},
+		{
+	   cellClass = "HBTwitterCell";
+	   label = "R0wDrunner";
+     user = "r0wdrunner";
+    },
+		{
+	   cellClass = "HBLinkTableCell";
+	   url = "https://github.com/R0wDrunner/Tabsa";
+	   label = "Source Code";
+	   subtitle = "You want to see my Code? Here it is!";
+    },
+		{
+			cell = PSGroupCell;
+			defaults = "com.zsaaiq.tabsa13";
+			footerAlignment =  1;
+			footerText = "Updated with ❤️ \nby zSaaiq";
+		},
+	);
+}
